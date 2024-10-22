@@ -1,0 +1,576 @@
+@font-face {
+  font-family: "Ubuntu-Bold", sans-serif;
+  src: url("../../../src/assets/fonts/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-normal", sans-serif;
+  src: url("../../../src/assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Medium", sans-serif;
+  src: url("../../../src/assets/fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto--Bold", sans-serif;
+  src: url("../../../src/assets/fonts/Roboto-Bold.ttf");
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+
+}
+
+.logo_wrapper {
+
+  display: flex;
+
+}
+
+.logo_desc {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  :hover {
+    cursor: pointer;
+  }
+
+}
+
+.logo_big_word {
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+
+.logo_small_word {
+  font-family: "Roboto-normal", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  margin-top: 15px;
+  color: #1C222DDE;
+}
+
+.logo_img_div {
+  width: 33px;
+  height: 33px;
+  margin-top: 10px;
+}
+
+.logo_img {
+  width: 100%;
+  height: 100%;
+}
+
+.home_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+
+}
+
+.wrapper {
+  width: 100%;
+
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  min-width: 1320px;
+  height: 100%;
+  width: 100%;
+  margin: 50px auto;
+
+}
+
+
+.search_input {
+  width: 650px;
+  height: 50px;
+  border-radius: 100px;
+  border: 2px solid #D0D0D0;
+  padding-left: 30px;
+  margin-top: 60px;
+  outline: none;
+
+}
+
+.album_photo_search_input {
+  width: 650px;
+  height: 50px;
+  border-radius: 100px;
+  border: 2px solid #D0D0D0;
+  padding-left: 30px;
+  outline: none;
+  margin-bottom: 35px;
+}
+
+.collection_div {
+  width: 302px;
+  border-radius: 8px;
+  border: 2px solid #D0D0D0;
+  overflow: hidden;
+  right: 0;
+  transition: height 0.8s ease;
+  margin-right: 20px;
+}
+
+
+.collection_mini_photo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 15px;
+  margin-left: 10px;
+
+}
+
+.collection_mini_title {
+  font-family: "Ubuntu-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.collection_mini_div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.collection_mini_description {
+  font-family: "Ubuntu-Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #767676;
+}
+
+.current_collection {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.collection_big_title {
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.collection_header {
+  margin-top: 20px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.collection_see_all_button {
+  margin-right: 10px;
+  font-family: "Ubuntu-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #767676;
+
+
+}
+
+.collection_see_all_button:hover {
+  cursor: pointer;
+}
+
+
+.images_wrapper {
+  margin-top: 30px;
+
+
+}
+
+.images_modal_wrapper {
+  width: 95%;
+  height: 190px;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+
+
+.my-masonry-grid_column > div {
+  background: grey;
+  margin-bottom: 30px;
+}
+
+.masonry {
+  padding: 50px;
+}
+
+.masonry-item {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.album_photo_item {
+  display: flex;
+  justify-content: center;
+}
+
+
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.modal_content {
+  width: 645px;
+  height: 700px;
+  background-color: #fff;;
+  border-radius: 20px;
+  margin-top: 15px;
+
+}
+
+
+.modal_container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.modal_image {
+  width: 300px;
+  height: 400px;
+  margin: 18px auto;
+
+
+}
+
+.modal_image_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.related_photos {
+  font-family: "Roboto-normal", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 25px;
+
+}
+
+.buttonPhoto {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
+
+.modal_header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal_close {
+  margin-right: 20px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+
+}
+
+.modal_header_close {
+  display: flex;
+  margin-top: 30px;
+}
+
+
+.modal_header_user_container {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.modal_user_photo {
+  width: 50px;
+  height: 50px;
+
+
+}
+
+.modal_user_photo_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+
+.modal_user_name {
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+
+}
+
+.album_title {
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.modal_user_description {
+  margin-left: 20px;
+  margin-top: 5px;
+
+}
+
+.modal_user_username {
+  font-family: "Roboto-normal", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: #7e8eaa;
+  margin-top: 3px;
+}
+
+.color_container {
+  display: flex;
+  gap: 25px;
+  margin-left: 15px;
+}
+
+.color_item {
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.album_collection_bold_desc {
+  font-family: "Roboto--Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #151C2ADE;
+  margin-top: 50px;
+}
+
+.album_collection_mini_desc {
+  font-family: "Roboto-normal", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7E8EAA;
+  margin-top: 15px;
+}
+
+.albums_container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1320px;
+  gap: 50px;
+
+
+}
+
+.album_photo {
+  width: 400px;
+  height: 350px;
+
+}
+
+.default_album_image {
+  width: 400px;
+  height: 320px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.album_item {
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.color_icon {
+  width: 15px;
+  height: 15px;
+}
+
+
+.err-page {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+
+  .err-title {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 50px;
+  }
+
+  .err-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.42);
+    border-radius: 10px;
+  }
+}
+
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 6px;
+  background: conic-gradient(from 135deg at top, currentColor 90deg, #0000 0) 0 calc(50% - 4px)/17px 8.5px,
+  radial-gradient(farthest-side at bottom left, #0000 calc(100% - 6px), currentColor calc(100% - 5px) 99%, #0000) top right/50% 50% content-box content-box,
+  radial-gradient(farthest-side at top, #0000 calc(100% - 6px), currentColor calc(100% - 5px) 99%, #0000) bottom   /100% 50% content-box content-box;
+  background-repeat: no-repeat;
+  animation: l11 1s infinite linear;
+}
+
+@keyframes l11 {
+  100% {
+    transform: rotate(1turn)
+  }
+}
+
+
+.login_container {
+  width: 100%;
+
+
+}
+
+.login_form {
+  margin-top: 25%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+input{
+  padding-left: 15px;
+}
+
+.login_p {
+  font-size: 40px;
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: bold;
+  color: #5D0001;
+  padding: 25px;
+  margin-top: 100px;
+}
+
+.login_input {
+  height: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 2px solid #D0D0D0;
+  outline: none;
+
+}
+
+.login_button {
+  height: 30px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 2px solid #D0D0D0;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.login_label {
+  color: #5D0001;
+}
+
+.button-login {
+  border: none;
+  background-color: transparent;
+  margin-left: 70px;
+}
+
+.logout_button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+}
+
+
+.logo_big_desc {
+  display: flex;
+  flex-direction: row;
+}
